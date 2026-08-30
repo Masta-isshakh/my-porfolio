@@ -1,0 +1,12 @@
+{
+  "name": "Mustafa Isshakh — Software & Digital Growth",
+  "short_name": "Mustafa",
+  "description": "Mobile apps, CRM & ERP systems, SEO websites, marketing and ads. Delivered first, paid after.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070E",
+  "theme_color": "#05070E",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
