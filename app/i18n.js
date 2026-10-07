@@ -7,8 +7,8 @@ export const I18N = {
   en: {
     _meta: {
       dir: 'ltr',
-      title: 'Mustafa Isshakh — Mobile Apps, CRM & ERP Systems, SEO Websites & Growth Marketing | Qatar',
-      description: 'I build mobile apps, CRM & ERP systems, and SEO-optimized converting websites — plus social media marketing, Google & YouTube Ads. You pay only after delivery.',
+      title: 'Mustafa Isshakh — IT Engineer: Cloud, Networks & Cybersecurity, Mobile Apps, CRM/ERP & SEO Websites | Qatar',
+      description: 'IT engineer in Qatar: CCNA-certified network administrator, cloud engineer and developer preparing for CEH. I build mobile apps, CRM & ERP systems and SEO websites, secure networks, and run social media & Google Ads. You pay only after delivery.',
       langLabel: 'العربية'
     },
     typed: [
@@ -16,9 +16,10 @@ export const I18N = {
       'CRM & ERP systems that run your whole business.',
       'websites that rank on Google and sell.',
       'campaigns that bring real paying customers.',
-      'cloud systems that simply never go down.'
+      'cloud systems that simply never go down.',
+      'networks that stay fast, stable and secure.'
     ],
-    marquee: ['Mobile Apps','CRM Systems','ERP Solutions','Web Applications','SEO Websites','Google Search Console','Social Media Marketing','Content Creation','Google Ads','YouTube Ads','Cloud Computing','DevOps','UI / UX Design','E-Commerce','Conversion Copywriting'],
+    marquee: ['Mobile Apps','CRM Systems','ERP Solutions','Web Applications','SEO Websites','Google Search Console','Social Media Marketing','Content Creation','Google Ads','YouTube Ads','Cloud Computing','DevOps','Network Administration','CCNA','Cybersecurity','Ethical Hacking','UI / UX Design','E-Commerce','Conversion Copywriting'],
     toast: {
       wa: 'Opening WhatsApp with your message…',
       mail: 'Opening your email app…',
@@ -44,7 +45,27 @@ export const I18N = {
 
     'brand.name':'Mustafa',
     'about.name':'Mustafa Isshakh',
-    'about.role':'Software engineer & digital growth specialist',
+    'about.role':'IT engineer · Cloud &amp; network engineer · Developer',
+
+    'nav.about':'About',
+    'about.eyebrow':'About me',
+    'about.title':'An IT engineer who builds, connects and secures.',
+    'about.p1':'I\'m Mustafa Isshakh, a university-graduated IT engineer based in Doha, Qatar. I work across the whole technology stack — I design cloud infrastructure, administer and secure networks, and build the mobile apps, CRM/ERP systems and websites that run on top of them.',
+    'about.p2':'I\'m a CCNA-certified network administrator currently preparing for the CEH (Certified Ethical Hacker) exam, sharpening my offensive and defensive skills every day on TryHackMe, Hack The Box and VulnHub. I also studied digital marketing through Udemy and Coursera — so what I build is not only secure and reliable, it brings in customers too.',
+    'about.badge1':'CCNA certified',
+    'about.badge2':'Preparing for CEH',
+    'about.practice':'Daily hands-on practice',
+    'about.ctf':'CTF challenges',
+    'about.cta':'Work with me',
+    'cred.done':'Completed','cred.progress':'In progress',
+    'cred1.t':'University degree — IT Engineering',
+    'cred1.d':'Software, networks, systems &amp; databases',
+    'cred2.t':'CCNA — Cisco Certified Network Associate',
+    'cred2.d':'Routing, switching, VLANs, subnetting &amp; network security',
+    'cred3.t':'CEH — Certified Ethical Hacker',
+    'cred3.d':'Exam preparation underway · daily labs &amp; CTFs',
+    'cred4.t':'Digital marketing',
+    'cred4.d':'Udemy &amp; Coursera — SEO, social media, paid ads &amp; content',
     'prj.eyebrow':'Selected work',
     'prj.title':'Projects I have delivered',
     'prj.sub':'Real products, real clients, real numbers — built, launched and supported end to end.',
@@ -92,7 +113,7 @@ export const I18N = {
     'hero.title2':'and the growth engine',
     'hero.title3':'that turns visitors into customers.',
     'hero.typedPrefix':'I create',
-    'hero.sub':'Mobile applications, CRM &amp; ERP systems, high-converting SEO websites, social media marketing and Google &amp; YouTube Ads — engineered end-to-end by one accountable expert. And here is the difference: <strong>you don\'t pay until it works.</strong>',
+    'hero.sub':'Mobile applications, CRM &amp; ERP systems, high-converting SEO websites, cloud &amp; network engineering, cybersecurity, social media marketing and Google &amp; YouTube Ads — engineered end-to-end by one accountable IT engineer. And here is the difference: <strong>you don\'t pay until it works.</strong>',
     'hero.cta1':'Chat on WhatsApp','hero.cta2':'See what I build',
     'hero.trust1':'Pay only after delivery &amp; testing',
     'hero.trust2':'Marketing charged on results, not hours',
@@ -152,6 +173,20 @@ export const I18N = {
     'svc7.f3':'Security, backups &amp; monitoring',
     'svc7.f4':'Cost optimization &amp; scaling',
 
+    'svc8.t':'Network Administration',
+    'svc8.d':'Reliable, well-designed networks for offices and businesses — configured, documented and monitored so your team simply stays connected.',
+    'svc8.f1':'Network design, setup &amp; documentation',
+    'svc8.f2':'Cisco routers, switches, VLANs &amp; Wi-Fi',
+    'svc8.f3':'Firewalls, VPN &amp; secure remote access',
+    'svc8.f4':'Monitoring, troubleshooting &amp; support',
+
+    'svc9.t':'Cybersecurity &amp; Ethical Hacking',
+    'svc9.d':'I look at your systems the way an attacker would — then close the gaps before someone else finds them. Always authorized, always documented.',
+    'svc9.f1':'Vulnerability assessments',
+    'svc9.f2':'Web application &amp; network security testing',
+    'svc9.f3':'Server, cloud &amp; network hardening',
+    'svc9.f4':'Clear reports &amp; security best practices',
+
     'svc.discuss':'Discuss this',
     'svcCta.t':'Something else in mind?',
     'svcCta.d':'If it lives on a phone, a browser or the cloud — I can build it. Tell me the idea and I\'ll tell you exactly how it gets done.',
@@ -183,9 +218,11 @@ export const I18N = {
     'exp.sub':'I\'ve spent my career on both sides of the screen — engineering the product and driving the demand. That combination is rare, and it\'s exactly why the work converts: the code is built for the marketing, and the marketing is built for the code.',
     'exp.c1':'Full-stack engineering','exp.c2':'Cloud architecture','exp.c3':'Technical SEO','exp.c4':'Conversion copywriting',
     'exp.c5':'Paid media','exp.c6':'Content production','exp.c7':'UI/UX design','exp.c8':'Arabic &amp; English',
+    'exp.c9':'Network administration (CCNA)','exp.c10':'Ethical hacking',
     'exp.btn':'Book a free consultation',
     sk1:'Mobile app development',sk2:'CRM, ERP &amp; business systems',sk3:'Web apps &amp; websites',
     sk4:'SEO &amp; Search Console',sk5:'Social media marketing',sk6:'Google &amp; YouTube Ads',sk7:'Cloud computing &amp; DevOps',
+    sk8:'Network administration (CCNA)',sk9:'Cybersecurity &amp; ethical hacking',
 
     'work.eyebrow':'What I Build',
     'work.title':'Products I deliver, end to end',
@@ -238,6 +275,8 @@ export const I18N = {
     q6:'Do you work with clients outside Qatar?',
     a6:'Yes. I\'m based in Qatar and work with clients across the Gulf and worldwide, in both Arabic and English. Everything is handled remotely — WhatsApp, calls and shared preview links keep it simple wherever you are.',
     q7:'What happens after delivery?',
+    q8:'Can you secure my network and systems?',
+    a8:'Yes. As a CCNA-certified network administrator preparing for the CEH, I review your network, servers and web applications for weaknesses — only with your written authorization — then fix and harden what I find: firewall rules, access control, updates, backups and secure configurations. You get a clear report of what was found and what was fixed.',
     a7:'I don\'t disappear. You get support, bug fixes and guidance after launch, and I\'m available for upgrades and new features as your business grows.',
 
     'ct.eyebrow':'Contact',
@@ -254,6 +293,7 @@ export const I18N = {
     'form.s1':'Mobile application','form.s2':'CRM / ERP system','form.s3':'Web application / platform',
     'form.s4':'Website + SEO','form.s5':'Social media marketing','form.s6':'Google / YouTube Ads',
     'form.s7':'Cloud / DevOps','form.s8':'Not sure yet',
+    'form.s9':'Network administration','form.s10':'Cybersecurity / security testing',
     'form.msg':'Tell me about the project','form.msgPh':'What do you want to build, and what should it achieve?',
     'form.submit':'Send via WhatsApp','form.alt':'or send it as an email instead',
 
@@ -268,8 +308,8 @@ export const I18N = {
   ar: {
     _meta: {
       dir: 'rtl',
-      title: 'مصطفى إسحاق — تطبيقات جوال وأنظمة CRM و ERP ومواقع محسّنة للسيو وتسويق يحقق نتائج | قطر',
-      description: 'أبني تطبيقات الجوال وأنظمة CRM و ERP والمواقع المحسّنة لمحركات البحث، إضافة إلى التسويق عبر السوشيال ميديا وإعلانات جوجل ويوتيوب. لا تدفع إلا بعد التسليم.',
+      title: 'مصطفى إسحاق — مهندس تقنية معلومات: سحابة وشبكات وأمن سيبراني، تطبيقات جوال وأنظمة CRM و ERP ومواقع سيو | قطر',
+      description: 'مهندس تقنية معلومات في قطر: مدير شبكات حاصل على CCNA ومهندس سحابة ومطوّر، وأستعد لشهادة CEH. أبني تطبيقات الجوال وأنظمة CRM و ERP ومواقع السيو، وأؤمّن الشبكات، وأدير التسويق وإعلانات جوجل. لا تدفع إلا بعد التسليم.',
       langLabel: 'English'
     },
     typed: [
@@ -277,9 +317,10 @@ export const I18N = {
       'أنظمة CRM و ERP تدير عملك بالكامل.',
       'مواقع تتصدّر جوجل وتبيع.',
       'حملات تجلب عملاء يدفعون حقاً.',
-      'أنظمة سحابية لا تتوقف أبداً.'
+      'أنظمة سحابية لا تتوقف أبداً.',
+      'شبكات سريعة ومستقرة وآمنة.'
     ],
-    marquee: ['تطبيقات جوال','أنظمة CRM','حلول ERP','تطبيقات ويب','مواقع محسّنة للسيو','Google Search Console','تسويق سوشيال ميديا','إنتاج محتوى','إعلانات جوجل','إعلانات يوتيوب','حوسبة سحابية','DevOps','تصميم واجهات','متاجر إلكترونية','كتابة إقناعية'],
+    marquee: ['تطبيقات جوال','أنظمة CRM','حلول ERP','تطبيقات ويب','مواقع محسّنة للسيو','Google Search Console','تسويق سوشيال ميديا','إنتاج محتوى','إعلانات جوجل','إعلانات يوتيوب','حوسبة سحابية','DevOps','إدارة الشبكات','CCNA','الأمن السيبراني','الاختراق الأخلاقي','تصميم واجهات','متاجر إلكترونية','كتابة إقناعية'],
     toast: {
       wa: 'يتم فتح واتساب برسالتك…',
       mail: 'يتم فتح تطبيق البريد…',
@@ -305,7 +346,27 @@ export const I18N = {
 
     'brand.name':'مصطفى',
     'about.name':'مصطفى إسحاق',
-    'about.role':'مهندس برمجيات ومتخصص في النمو الرقمي',
+    'about.role':'مهندس تقنية معلومات · مهندس سحابة وشبكات · مطوّر',
+
+    'nav.about':'من أنا',
+    'about.eyebrow':'من أنا',
+    'about.title':'مهندس تقنية معلومات… يبني ويربط ويؤمّن.',
+    'about.p1':'أنا مصطفى إسحاق، مهندس تقنية معلومات خرّيج جامعي، مقيم في الدوحة، قطر. أعمل على كامل الطبقات التقنية — أصمّم البنية السحابية، وأدير الشبكات وأؤمّنها، وأبني تطبيقات الجوال وأنظمة CRM و ERP والمواقع التي تعمل فوقها.',
+    'about.p2':'أنا مدير شبكات حاصل على شهادة CCNA، وأستعد حالياً لاختبار CEH (الهاكر الأخلاقي المعتمد)، وأطوّر مهاراتي في الهجوم والدفاع يومياً على TryHackMe و Hack The Box و VulnHub. كما درست التسويق الرقمي عبر Udemy و Coursera — لذلك ما أبنيه ليس آمناً وموثوقاً فقط، بل يجلب العملاء أيضاً.',
+    'about.badge1':'حاصل على CCNA',
+    'about.badge2':'أستعد لشهادة CEH',
+    'about.practice':'تدريب عملي يومي',
+    'about.ctf':'تحديات CTF',
+    'about.cta':'اعمل معي',
+    'cred.done':'مكتملة','cred.progress':'قيد الإنجاز',
+    'cred1.t':'شهادة جامعية — هندسة تقنية المعلومات',
+    'cred1.d':'البرمجيات والشبكات والأنظمة وقواعد البيانات',
+    'cred2.t':'CCNA — شهادة سيسكو لمشارك الشبكات المعتمد',
+    'cred2.d':'التوجيه والتحويل و VLAN وتقسيم الشبكات وأمن الشبكات',
+    'cred3.t':'CEH — الهاكر الأخلاقي المعتمد',
+    'cred3.d':'التحضير للاختبار جارٍ · مختبرات وتحديات CTF يومية',
+    'cred4.t':'التسويق الرقمي',
+    'cred4.d':'Udemy و Coursera — السيو والسوشيال ميديا والإعلانات والمحتوى',
     'prj.eyebrow':'مختارات من الأعمال',
     'prj.title':'مشاريع سلّمتها',
     'prj.sub':'منتجات حقيقية وعملاء حقيقيون وأرقام حقيقية — بُنيت وأُطلقت ودُعمت من البداية إلى النهاية.',
@@ -353,7 +414,7 @@ export const I18N = {
     'hero.title2':'ومحرّك النمو',
     'hero.title3':'الذي يحوّل الزائر إلى عميل.',
     'hero.typedPrefix':'أُنشئ',
-    'hero.sub':'تطبيقات جوال، وأنظمة CRM و ERP، ومواقع محسّنة لمحركات البحث تحقق مبيعات، وتسويق عبر السوشيال ميديا، وإعلانات جوجل ويوتيوب — كل ذلك بيد خبير واحد مسؤول عن النتيجة كاملة. والفرق الحقيقي: <strong>لا تدفع حتى تتأكد أن كل شيء يعمل.</strong>',
+    'hero.sub':'تطبيقات جوال، وأنظمة CRM و ERP، ومواقع محسّنة لمحركات البحث تحقق مبيعات، وهندسة السحابة والشبكات، والأمن السيبراني، وتسويق عبر السوشيال ميديا، وإعلانات جوجل ويوتيوب — كل ذلك بيد مهندس واحد مسؤول عن النتيجة كاملة. والفرق الحقيقي: <strong>لا تدفع حتى تتأكد أن كل شيء يعمل.</strong>',
     'hero.cta1':'تواصل عبر واتساب','hero.cta2':'شاهد ما أبنيه',
     'hero.trust1':'الدفع بعد التسليم والتجربة',
     'hero.trust2':'التسويق بالنتائج لا بالساعات',
@@ -413,6 +474,20 @@ export const I18N = {
     'svc7.f3':'الأمان والنسخ الاحتياطي والمراقبة',
     'svc7.f4':'خفض التكاليف والتوسّع',
 
+    'svc8.t':'إدارة الشبكات',
+    'svc8.d':'شبكات موثوقة ومصمّمة بإتقان للمكاتب والشركات — مهيّأة وموثّقة ومراقَبة ليبقى فريقك متصلاً دون انقطاع.',
+    'svc8.f1':'تصميم الشبكات وإعدادها وتوثيقها',
+    'svc8.f2':'راوترات وسويتشات سيسكو و VLAN و Wi-Fi',
+    'svc8.f3':'جدران حماية و VPN ووصول آمن عن بُعد',
+    'svc8.f4':'مراقبة وحل أعطال ودعم فني',
+
+    'svc9.t':'الأمن السيبراني والاختراق الأخلاقي',
+    'svc9.d':'أنظر إلى أنظمتك كما ينظر إليها المهاجم، ثم أسدّ الثغرات قبل أن يكتشفها غيري. دائماً بتصريح، ودائماً بتوثيق.',
+    'svc9.f1':'تقييم الثغرات الأمنية',
+    'svc9.f2':'اختبار أمان تطبيقات الويب والشبكات',
+    'svc9.f3':'تحصين الخوادم والسحابة والشبكات',
+    'svc9.f4':'تقارير واضحة وأفضل الممارسات الأمنية',
+
     'svc.discuss':'تحدّث معي عن هذا',
     'svcCta.t':'لديك فكرة أخرى؟',
     'svcCta.d':'إن كانت تعمل على هاتف أو متصفح أو سحابة، أستطيع بناءها. أخبرني بفكرتك وسأخبرك بالضبط كيف تُنفَّذ.',
@@ -444,9 +519,11 @@ export const I18N = {
     'exp.sub':'قضيت سنوات على جانبي الشاشة: أبني المنتج وأصنع الطلب عليه. هذا المزيج نادر، وهو تحديداً سبب نجاح النتائج — الكود مبني ليخدم التسويق، والتسويق مبني ليخدم المنتج.',
     'exp.c1':'برمجة متكاملة','exp.c2':'هندسة سحابية','exp.c3':'سيو تقني','exp.c4':'كتابة إقناعية',
     'exp.c5':'إعلانات مدفوعة','exp.c6':'إنتاج المحتوى','exp.c7':'تصميم واجهات وتجربة','exp.c8':'العربية والإنجليزية',
+    'exp.c9':'إدارة الشبكات (CCNA)','exp.c10':'الاختراق الأخلاقي',
     'exp.btn':'احجز استشارة مجانية',
     sk1:'تطوير تطبيقات الجوال',sk2:'أنظمة CRM و ERP',sk3:'تطبيقات ومواقع الويب',
     sk4:'السيو و Search Console',sk5:'التسويق عبر السوشيال ميديا',sk6:'إعلانات جوجل ويوتيوب',sk7:'الحوسبة السحابية و DevOps',
+    sk8:'إدارة الشبكات (CCNA)',sk9:'الأمن السيبراني والاختراق الأخلاقي',
 
     'work.eyebrow':'ما أبنيه',
     'work.title':'منتجات أسلّمها من الفكرة حتى الإطلاق',
@@ -499,6 +576,8 @@ export const I18N = {
     q6:'هل تعمل مع عملاء خارج قطر؟',
     a6:'نعم. مقرّي في قطر وأعمل مع عملاء في الخليج وحول العالم، بالعربية والإنجليزية. كل شيء يُدار عن بُعد عبر واتساب والمكالمات وروابط المعاينة.',
     q7:'ماذا يحدث بعد التسليم؟',
+    q8:'هل تستطيع تأمين شبكتي وأنظمتي؟',
+    a8:'نعم. بصفتي مدير شبكات حاصلاً على CCNA وأستعد لشهادة CEH، أفحص شبكتك وخوادمك وتطبيقات الويب بحثاً عن الثغرات — وبتصريح مكتوب منك فقط — ثم أصلح وأحصّن ما أجده: قواعد جدار الحماية، والصلاحيات، والتحديثات، والنسخ الاحتياطي، والإعدادات الآمنة. وتحصل على تقرير واضح بما وُجد وما تم إصلاحه.',
     a7:'لا أختفي. تحصل على دعم وإصلاح للأخطاء وإرشاد بعد الإطلاق، وأبقى متاحاً للتطويرات والمزايا الجديدة كلما كبر عملك.',
 
     'ct.eyebrow':'تواصل',
@@ -515,6 +594,7 @@ export const I18N = {
     'form.s1':'تطبيق جوال','form.s2':'نظام CRM / ERP','form.s3':'تطبيق أو منصة ويب',
     'form.s4':'موقع + سيو','form.s5':'تسويق سوشيال ميديا','form.s6':'إعلانات جوجل / يوتيوب',
     'form.s7':'سحابة / DevOps','form.s8':'لم أحدّد بعد',
+    'form.s9':'إدارة الشبكات','form.s10':'الأمن السيبراني / اختبار الأمان',
     'form.msg':'أخبرني عن المشروع','form.msgPh':'ما الذي تريد بناءه، وما الهدف منه؟',
     'form.submit':'أرسل عبر واتساب','form.alt':'أو أرسله عبر البريد الإلكتروني',
 

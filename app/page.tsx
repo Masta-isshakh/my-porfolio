@@ -44,6 +44,7 @@ export default function Home() {
           </a>
 
           <nav className="nav__links" aria-label="Main">
+            <a href="#about" className="nav__link" data-i18n="nav.about">About</a>
             <a href="#services" className="nav__link" data-i18n="nav.services">Services</a>
             <a href="#guarantee" className="nav__link" data-i18n="nav.guarantee">Guarantee</a>
             <a href="#expertise" className="nav__link" data-i18n="nav.expertise">Expertise</a>
@@ -76,6 +77,7 @@ export default function Home() {
 
       <div className="mobile-menu" id="mobileMenu" aria-hidden="true">
         <nav className="mobile-menu__links">
+          <a href="#about" data-i18n="nav.about">About</a>
           <a href="#services" data-i18n="nav.services">Services</a>
           <a href="#guarantee" data-i18n="nav.guarantee">Guarantee</a>
           <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
@@ -99,6 +101,7 @@ export default function Home() {
         <div className="container hero__inner">
 
           <div className="hero__badge reveal" data-reveal>
+            <img className="hero__avatar" src="/assets/img/profile.jpg" alt="" width={28} height={28} onError={(e) => e.currentTarget.remove()} />
             <span className="pulse-dot"></span>
             <span data-i18n="hero.badge">Mustafa Isshakh — available for new projects, from Qatar to the world</span>
           </div>
@@ -115,7 +118,7 @@ export default function Home() {
           </div>
 
           <p className="hero__sub reveal" data-reveal data-delay="220" data-i18n="hero.sub">
-            Mobile applications, CRM &amp; ERP systems, high-converting SEO websites, social media marketing and Google &amp; YouTube Ads — engineered end-to-end by one accountable expert. And here is the difference: <strong>you don't pay until it works.</strong>
+            Mobile applications, CRM &amp; ERP systems, high-converting SEO websites, cloud &amp; network engineering, cybersecurity, social media marketing and Google &amp; YouTube Ads — engineered end-to-end by one accountable IT engineer. And here is the difference: <strong>you don't pay until it works.</strong>
           </p>
 
           <div className="hero__cta reveal" data-reveal data-delay="280">
@@ -146,6 +149,72 @@ export default function Home() {
       <div className="marquee" aria-hidden="true">
         <div className="marquee__track" id="marqueeTrack"></div>
       </div>
+
+      {/* ============ ABOUT ============ */}
+      <section className="section section--about" id="about">
+        <div className="container about">
+
+          <div className="about__media reveal" data-reveal>
+            <div className="about__frame">
+              <img src="/assets/img/profile-portrait.jpg" alt="Mustafa Isshakh — IT engineer, cloud &amp; network engineer" width={960} height={1200} loading="lazy" />
+            </div>
+            <div className="about__badge about__badge--top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+              <span data-i18n="about.badge1">CCNA certified</span>
+            </div>
+            <div className="about__badge about__badge--bottom">
+              <span className="pulse-dot"></span>
+              <span data-i18n="about.badge2">Preparing for CEH</span>
+            </div>
+          </div>
+
+          <div className="about__body reveal" data-reveal data-delay="100">
+            <span className="eyebrow"><span className="eyebrow__line"></span><span data-i18n="about.eyebrow">About me</span></span>
+            <h2 className="section__title" data-i18n="about.title">An IT engineer who builds, connects and secures.</h2>
+            <p className="section__sub" data-i18n="about.p1">I'm Mustafa Isshakh, a university-graduated IT engineer based in Doha, Qatar. I work across the whole technology stack — I design cloud infrastructure, administer and secure networks, and build the mobile apps, CRM/ERP systems and websites that run on top of them.</p>
+            <p className="section__sub" data-i18n="about.p2">I'm a CCNA-certified network administrator currently preparing for the CEH (Certified Ethical Hacker) exam, sharpening my offensive and defensive skills every day on TryHackMe, Hack The Box and VulnHub. I also studied digital marketing through Udemy and Coursera — so what I build is not only secure and reliable, it brings in customers too.</p>
+
+            <ul className="creds">
+              <li className="cred">
+                <span className="cred__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9 12 4l10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg></span>
+                <span className="cred__body"><b data-i18n="cred1.t">University degree — IT Engineering</b><span data-i18n="cred1.d">Software, networks, systems &amp; databases</span></span>
+                <span className="cred__tag" data-i18n="cred.done">Completed</span>
+              </li>
+              <li className="cred">
+                <span className="cred__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 17h.01M11 17h.01M12 14V9M12 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></span>
+                <span className="cred__body"><b data-i18n="cred2.t">CCNA — Cisco Certified Network Associate</b><span data-i18n="cred2.d">Routing, switching, VLANs, subnetting &amp; network security</span></span>
+                <span className="cred__tag" data-i18n="cred.done">Completed</span>
+              </li>
+              <li className="cred">
+                <span className="cred__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6z"/><path d="M12 9v4M12 16h.01"/></svg></span>
+                <span className="cred__body"><b data-i18n="cred3.t">CEH — Certified Ethical Hacker</b><span data-i18n="cred3.d">Exam preparation underway · daily labs &amp; CTFs</span></span>
+                <span className="cred__tag cred__tag--progress" data-i18n="cred.progress">In progress</span>
+              </li>
+              <li className="cred">
+                <span className="cred__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M3 17l5-6 4 4 4-6 5 8"/><path d="M3 21h18"/></svg></span>
+                <span className="cred__body"><b data-i18n="cred4.t">Digital marketing</b><span data-i18n="cred4.d">Udemy &amp; Coursera — SEO, social media, paid ads &amp; content</span></span>
+                <span className="cred__tag" data-i18n="cred.done">Completed</span>
+              </li>
+            </ul>
+
+            <div className="about__practice">
+              <span className="about__practice-label" data-i18n="about.practice">Daily hands-on practice</span>
+              <div className="expertise-chips">
+                <span className="chip">TryHackMe</span>
+                <span className="chip">Hack The Box</span>
+                <span className="chip">VulnHub</span>
+                <span className="chip" data-i18n="about.ctf">CTF challenges</span>
+              </div>
+            </div>
+
+            <a className="btn btn--primary magnetic" href="#contact">
+              <span data-i18n="about.cta">Work with me</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="btn__arrow"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </section>
 
       {/* ============ SERVICES ============ */}
       <section className="section" id="services">
@@ -270,7 +339,39 @@ export default function Home() {
               <a className="svc-card__link" href="#contact"><span data-i18n="svc.discuss">Discuss this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             </article>
 
-            <article className="svc-card svc-card--cta reveal" data-reveal data-delay="420">
+            <article className="svc-card tilt reveal" data-reveal data-delay="420">
+              <div className="svc-card__glow"></div>
+              <div className="svc-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="2" width="6" height="5" rx="1"/><rect x="2" y="17" width="6" height="5" rx="1"/><rect x="16" y="17" width="6" height="5" rx="1"/><path d="M12 7v5M5 17v-3h14v3"/></svg>
+              </div>
+              <h3 className="svc-card__title" data-i18n="svc8.t">Network Administration</h3>
+              <p className="svc-card__desc" data-i18n="svc8.d">Reliable, well-designed networks for offices and businesses — configured, documented and monitored so your team simply stays connected.</p>
+              <ul className="svc-card__list">
+                <li data-i18n="svc8.f1">Network design, setup &amp; documentation</li>
+                <li data-i18n="svc8.f2">Cisco routers, switches, VLANs &amp; Wi-Fi</li>
+                <li data-i18n="svc8.f3">Firewalls, VPN &amp; secure remote access</li>
+                <li data-i18n="svc8.f4">Monitoring, troubleshooting &amp; support</li>
+              </ul>
+              <a className="svc-card__link" href="#contact"><span data-i18n="svc.discuss">Discuss this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </article>
+
+            <article className="svc-card tilt reveal" data-reveal data-delay="480">
+              <div className="svc-card__glow"></div>
+              <div className="svc-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10 11V9.5a2 2 0 0 1 4 0V11"/></svg>
+              </div>
+              <h3 className="svc-card__title" data-i18n="svc9.t">Cybersecurity &amp; Ethical Hacking</h3>
+              <p className="svc-card__desc" data-i18n="svc9.d">I look at your systems the way an attacker would — then close the gaps before someone else finds them. Always authorized, always documented.</p>
+              <ul className="svc-card__list">
+                <li data-i18n="svc9.f1">Vulnerability assessments</li>
+                <li data-i18n="svc9.f2">Web application &amp; network security testing</li>
+                <li data-i18n="svc9.f3">Server, cloud &amp; network hardening</li>
+                <li data-i18n="svc9.f4">Clear reports &amp; security best practices</li>
+              </ul>
+              <a className="svc-card__link" href="#contact"><span data-i18n="svc.discuss">Discuss this</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </article>
+
+            <article className="svc-card svc-card--cta reveal" data-reveal data-delay="540">
               <h3 className="svc-card__title" data-i18n="svcCta.t">Something else in mind?</h3>
               <p className="svc-card__desc" data-i18n="svcCta.d">If it lives on a phone, a browser or the cloud — I can build it. Tell me the idea and I'll tell you exactly how it gets done.</p>
               <a className="btn btn--primary btn--sm" href="#contact"><span data-i18n="svcCta.btn">Tell me your idea</span></a>
@@ -333,7 +434,7 @@ export default function Home() {
             <div className="stat__label" data-i18n="stat1">Upfront payment required</div>
           </div>
           <div className="stat reveal" data-reveal data-delay="60">
-            <div className="stat__num"><span className="counter" data-target="7">0</span></div>
+            <div className="stat__num"><span className="counter" data-target="9">0</span></div>
             <div className="stat__label" data-i18n="stat2">Disciplines under one roof</div>
           </div>
           <div className="stat reveal" data-reveal data-delay="120">
@@ -360,7 +461,7 @@ export default function Home() {
                 </span>
                 <span className="profile__id">
                   <b data-i18n="about.name">Mustafa Isshakh</b>
-                  <span data-i18n="about.role">Software engineer &amp; digital growth specialist</span>
+                  <span data-i18n="about.role">IT engineer · Cloud &amp; network engineer · Developer</span>
                 </span>
               </div>
 
@@ -376,6 +477,8 @@ export default function Home() {
                 <span className="chip" data-i18n="exp.c5">Paid media</span>
                 <span className="chip" data-i18n="exp.c6">Content production</span>
                 <span className="chip" data-i18n="exp.c7">UI/UX design</span>
+                <span className="chip" data-i18n="exp.c9">Network administration (CCNA)</span>
+                <span className="chip" data-i18n="exp.c10">Ethical hacking</span>
                 <span className="chip" data-i18n="exp.c8">Arabic &amp; English</span>
               </div>
 
@@ -393,6 +496,8 @@ export default function Home() {
               <div className="skill" data-value="94"><div className="skill__head"><span data-i18n="sk5">Social media marketing</span><b>94%</b></div><div className="skill__bar"><i></i></div></div>
               <div className="skill" data-value="93"><div className="skill__head"><span data-i18n="sk6">Google &amp; YouTube Ads</span><b>93%</b></div><div className="skill__bar"><i></i></div></div>
               <div className="skill" data-value="92"><div className="skill__head"><span data-i18n="sk7">Cloud computing &amp; DevOps</span><b>92%</b></div><div className="skill__bar"><i></i></div></div>
+              <div className="skill" data-value="92"><div className="skill__head"><span data-i18n="sk8">Network administration (CCNA)</span><b>92%</b></div><div className="skill__bar"><i></i></div></div>
+              <div className="skill" data-value="85"><div className="skill__head"><span data-i18n="sk9">Cybersecurity &amp; ethical hacking</span><b>85%</b></div><div className="skill__bar"><i></i></div></div>
             </div>
 
           </div>
@@ -620,6 +725,10 @@ export default function Home() {
               <summary><span data-i18n="q7">What happens after delivery?</span><i className="faq__ico"></i></summary>
               <div className="faq__a"><p data-i18n="a7">I don't disappear. You get support, bug fixes and guidance after launch, and I'm available for upgrades and new features as your business grows.</p></div>
             </details>
+            <details className="faq__item reveal" data-reveal data-delay="350">
+              <summary><span data-i18n="q8">Can you secure my network and systems?</span><i className="faq__ico"></i></summary>
+              <div className="faq__a"><p data-i18n="a8">Yes. As a CCNA-certified network administrator preparing for the CEH, I review your network, servers and web applications for weaknesses — only with your written authorization — then fix and harden what I find: firewall rules, access control, updates, backups and secure configurations. You get a clear report of what was found and what was fixed.</p></div>
+            </details>
           </div>
         </div>
       </section>
@@ -678,6 +787,8 @@ export default function Home() {
                     <option value="Social media marketing" data-i18n="form.s5">Social media marketing</option>
                     <option value="Google / YouTube Ads" data-i18n="form.s6">Google / YouTube Ads</option>
                     <option value="Cloud / DevOps" data-i18n="form.s7">Cloud / DevOps</option>
+                    <option value="Network administration" data-i18n="form.s9">Network administration</option>
+                    <option value="Cybersecurity / security testing" data-i18n="form.s10">Cybersecurity / security testing</option>
                     <option value="Not sure yet" data-i18n="form.s8">Not sure yet</option>
                   </select>
                 </div>
@@ -721,10 +832,13 @@ export default function Home() {
             <a href="#services" data-i18n="svc4.t">SEO Websites</a>
             <a href="#services" data-i18n="svc5.t">Social Media Marketing</a>
             <a href="#services" data-i18n="svc6.t">Google &amp; YouTube Ads</a>
+            <a href="#services" data-i18n="svc8.t">Network Administration</a>
+            <a href="#services" data-i18n="svc9.t">Cybersecurity &amp; Ethical Hacking</a>
           </div>
 
           <div className="footer__col">
             <h4 data-i18n="foot.explore">Explore</h4>
+            <a href="#about" data-i18n="nav.about">About</a>
             <a href="#guarantee" data-i18n="nav.guarantee">Guarantee</a>
             <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
             <a href="#why" data-i18n="nav.why">Why Me</a>

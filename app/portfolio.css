@@ -627,6 +627,54 @@ html[lang="ar"] .cmp__col{letter-spacing:.03em;font-size:.9rem}
 .testi__name b{font-size:.93rem;font-weight:600}
 .testi__name span{font-size:.84rem;color:var(--muted)}
 
+/* ---------- ABOUT (portrait + credentials) ---------- */
+.about{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(40px,6vw,84px);align-items:center}
+.about__media{position:relative;max-width:440px;width:100%;justify-self:center}
+.about__frame{
+  position:relative;aspect-ratio:4/5;border-radius:var(--r-xl);overflow:hidden;
+  padding:2px;background:var(--grad);
+  box-shadow:0 40px 90px -40px rgba(124,92,255,.75);
+}
+.about__frame img{width:100%;height:100%;object-fit:cover;border-radius:calc(var(--r-xl) - 2px)}
+.about__media::before{
+  content:'';position:absolute;inset:-14% -10%;z-index:-1;
+  background:radial-gradient(closest-side,rgba(0,194,255,.28),transparent 70%),radial-gradient(closest-side at 70% 80%,rgba(255,77,141,.22),transparent 70%);
+  filter:blur(30px);
+}
+.about__badge{
+  position:absolute;display:inline-flex;align-items:center;gap:9px;
+  padding:10px 16px;border-radius:var(--r-pill);
+  background:var(--glass);border:1px solid var(--line-strong);backdrop-filter:blur(14px);
+  font-size:.84rem;font-weight:600;box-shadow:var(--shadow);white-space:nowrap;
+}
+.about__badge svg{width:18px;height:18px;color:var(--c1)}
+.about__badge--top{top:26px;inset-inline-start:-22px}
+.about__badge--bottom{bottom:30px;inset-inline-end:-22px}
+.about__body .section__sub + .section__sub{margin-top:14px}
+
+.creds{display:grid;gap:12px;margin:30px 0 26px}
+.cred{
+  display:flex;align-items:center;gap:15px;padding:15px 18px;
+  border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface);backdrop-filter:blur(14px);
+  transition:border-color var(--t-fast),transform var(--t-fast);
+}
+.cred:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+.cred__ico{width:42px;height:42px;flex-shrink:0;display:grid;place-items:center;border-radius:13px;background:var(--grad-soft);color:var(--c1)}
+.cred__ico svg{width:21px;height:21px}
+.cred__body{display:grid;gap:1px;min-width:0;flex:1}
+.cred__body b{font-family:var(--font-display);font-size:.98rem;font-weight:600;line-height:1.35}
+.cred__body span{font-size:.86rem;color:var(--muted)}
+.cred__tag{
+  flex-shrink:0;padding:4px 11px;border-radius:var(--r-pill);
+  font-size:.72rem;font-weight:700;letter-spacing:.04em;
+  color:#28E08A;background:rgba(40,224,138,.12);
+}
+.cred__tag--progress{color:var(--gold);background:rgba(255,196,107,.14)}
+.about__practice-label{display:block;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.about__practice .expertise-chips{margin:12px 0 30px}
+
+.hero__avatar{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid var(--line-strong);margin-inline-start:-6px}
+
 /* ---------- PROFILE (name + photo) ---------- */
 .profile{display:flex;align-items:center;gap:15px;margin-bottom:26px}
 .profile__photo{
@@ -872,6 +920,9 @@ html[lang="ar"] .footer__col h4{letter-spacing:.04em}
 }
 @media (max-width:900px){
   .expertise-layout{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}
+  .about__badge--top{inset-inline-start:-8px}
+  .about__badge--bottom{inset-inline-end:-8px}
   .contact-wrap{grid-template-columns:1fr}
   .grt-banner{flex-direction:column;align-items:flex-start}
 }
@@ -886,6 +937,10 @@ html[lang="ar"] .footer__col h4{letter-spacing:.04em}
   .hero__cta{width:100%;flex-direction:column}
   .hero__cta .btn{width:100%}
   .field-row{grid-template-columns:1fr}
+  .cred{flex-wrap:wrap;padding:14px;row-gap:8px}
+  .cred__body{flex:1 1 calc(100% - 57px)}
+  .cred__tag{margin-inline-start:57px}
+  .about__badge{font-size:.78rem;padding:8px 13px}
   .footer__inner{grid-template-columns:1fr;gap:30px}
   .wa-float{height:54px;padding-inline:16px;bottom:18px;inset-inline-end:18px}
   .to-top{bottom:18px;inset-inline-start:18px;width:42px;height:42px}

@@ -6,9 +6,9 @@ const SITE = "https://mousti.org";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title:
-    "Mustafa Isshakh — Mobile Apps, CRM & ERP Systems, SEO Websites & Growth Marketing | Qatar",
+    "Mustafa Isshakh — IT Engineer: Cloud, Networks & Cybersecurity, Mobile Apps, CRM/ERP & SEO Websites | Qatar",
   description:
-    "I build mobile apps, CRM & ERP systems, and SEO-optimized converting websites — plus social media marketing, Google & YouTube Ads. You pay only after delivery. Marketing charged on results. Based in Qatar, working worldwide.",
+    "IT engineer in Qatar — CCNA-certified network administrator, cloud engineer and developer preparing for CEH. I build mobile apps, CRM & ERP systems and SEO websites, secure networks, and run social media marketing, Google & YouTube Ads. You pay only after delivery.",
   keywords: [
     "mobile app developer Qatar",
     "CRM development",
@@ -19,6 +19,12 @@ export const metadata: Metadata = {
     "Google Ads",
     "YouTube Ads",
     "cloud computing",
+    "cloud engineer Qatar",
+    "network administrator Qatar",
+    "CCNA",
+    "cybersecurity Qatar",
+    "ethical hacking",
+    "IT engineer Doha",
     "Doha developer",
     "freelance developer Qatar",
   ],
@@ -83,11 +89,16 @@ const structuredData = {
       "@id": "https://mousti.org/#person",
       "name": "Mustafa Isshakh",
       "alternateName": "Mousti",
-      "jobTitle": "Full-Stack Software Engineer & Digital Growth Specialist",
+      "jobTitle": "IT Engineer — Cloud & Network Engineer, Full-Stack Developer",
+      "image": "https://mousti.org/assets/img/profile-portrait.jpg",
       "email": "mailto:masta@mousti.org",
       "telephone": "+97455708226",
       "url": "https://mousti.org/",
-      "knowsAbout": ["Mobile App Development","CRM Development","ERP Systems","Web Applications","SEO","Social Media Marketing","Google Ads","YouTube Ads","Cloud Computing"],
+      "knowsAbout": ["Mobile App Development","CRM Development","ERP Systems","Web Applications","SEO","Social Media Marketing","Google Ads","YouTube Ads","Cloud Computing","Network Administration","Cisco Networking","Cybersecurity","Ethical Hacking","Penetration Testing"],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "University degree in Information Technology Engineering" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "CCNA — Cisco Certified Network Associate" }
+      ],
       "address": { "@type": "PostalAddress", "addressCountry": "QA", "addressLocality": "Doha" }
     },
     {
@@ -107,7 +118,9 @@ const structuredData = {
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO-Optimized Website Development" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Marketing & Content Production" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Ads & YouTube Ads Management" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud Computing & DevOps" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud Computing & DevOps" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Network Administration" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cybersecurity & Vulnerability Assessment" } }
       ]
     },
     {
